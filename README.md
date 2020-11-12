@@ -1,5 +1,5 @@
 # VideoCoding_S2
-##Seminar 2 of Video Coding: More ffmpeg
+## Seminar 2 of Video Coding: More ffmpeg
 
 **Task 1:** Cut 10 seconds of the BBB video.
 
@@ -14,10 +14,10 @@
 
 **Task 4:** Change the audio into mono output and in a different audio codec.
 
-##Requirements
+### Requirements
 	ffmpeg, Python3
 		
-##Executing
+### Executing
 Run Video_editor.py in the same folder as the video you want to edit, you can have several videos in the folder.
 
 Before every edition it will ask what file you want to edit.
