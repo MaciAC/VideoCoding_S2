@@ -1,2 +1,35 @@
-Hola, tria una opció:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tria una opció:
+  1: Tallar fragment
   0: exit
+
