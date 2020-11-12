@@ -7,7 +7,7 @@ change_vid = True
 while not exit:
 
     if change_vid:
-        filename = input("\nQuin video vols editar?\n")
+        filename = input("\nWhich video do you want to edit?\n")
 
     option = int(input(menu))
 
@@ -16,8 +16,8 @@ while not exit:
         continue
 
     if option == 1:
-        start = input("\nEspecifica l'inici en el format: hh:mm:ss \n")
-        time = input("\nQuants segons vols? \n")
+        start = input("\nSpecify the start in the format: hh: mm: ss \n")
+        time = input("\nHow many seconds?\n")
         out = "cut_{}seconds_{}".format(time, filename)
         os.system("ffmpeg -i {} -ss {} -t {} -c copy {}".format(filename, start, time, out))
 
@@ -30,7 +30,7 @@ while not exit:
     if option == 3:
         out = "resized_" + filename
         sizes = ["1280:720", "720:480", "360:240", "160:120"]
-        idx = int(input("\nA quina resolució el vols canviar?\n 1: 720p\n 2: 480p\n 3: 360x240\n 4: 160x120 \n")) - 1
+        idx = int(input("\nWhat resize do you want to apply?\n 1: 720p\n 2: 480p\n 3: 360x240\n 4: 160x120 \n")) - 1
         os.system("ffmpeg -i {} -vf scale={},setsar=1:1 {}".format(filename, sizes[idx], out))
 
 
@@ -38,4 +38,4 @@ while not exit:
         out = "monoAAC_" + filename
         os.system("ffmpeg -i {} -c:v copy -ac 1 -c:a aac {}".format(filename, out))
 
-    print("\nGuardat com a " + out)
+    print("\nSaved as " + out)
