@@ -31,5 +31,8 @@
 
 Tria una opció:
   1: Tallar fragment
+  2: Veure histograma superposat
+  3: Canviar la mida
+  4: Passar aduio a AAC i mono
   0: exit
 
