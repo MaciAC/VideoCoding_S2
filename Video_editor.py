@@ -20,11 +20,19 @@ while not exit:
             videos.append(file)
             count += 1
 
-    filename = videos[int(input())]
+    idx = int(input())
+    if idx not in range(count):
+        print("BAD INPUT!")
+        continue
+
+    filename = videos[int(idx)]
 
     # get the option
     option = int(input(menu))
     all_options = False
+    if option not in range(6):
+        print("BAD INPUT!")
+        continue
 
     # this activates the autoincremental option value to run all the above options
     if option == 5:
