@@ -2,12 +2,18 @@ import os
 
 menu = open("menu.txt", "r").read()
 exit = False
-change_vid = True
 
 while not exit:
+    files = os.listdir()
+    count = 0
+    videos = []
+    for file in files:
+        if file.endswith('.mp4'):
+            print("{} - {}".format(count,file))
+            videos.append(file)
+            count += 1
 
-    if change_vid:
-        filename = input("\nWhich video do you want to edit?\n")
+    filename = videos[int(input("\nWhich video do you want to edit?\nEnter the number besides the option\n"))]
 
     option = int(input(menu))
 

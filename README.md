@@ -5,7 +5,7 @@
 
 **Task 2:** Extract the YUV histogram from the previous BBB video you’ve done and create a new video with both images at the same time.
 
-**Task 3:** Resize the BBB video into 4 differentsvideo outputs (doesn’t need to be at the same time):
+**Task 3:** Resize the BBB video into 4 different video outputs (doesn’t need to be at the same time):
 
 * 720p
 * 480p
@@ -16,13 +16,13 @@
 
 ### Requirements
 	ffmpeg, Python3
-		
+
 ### Executing
 Run Video_editor.py in the same folder as the video you want to edit, you can have several videos in the folder.
 
-Before every edition it will ask what file you want to edit.
+Before every edition it will show the .mp4 files in the folder, and will ask which file you want to edit. Enter the option via the number besides the video.
 
-In the menu you can choose what of the tasks defined above you want to realize entering the number beside the option.
+In the menu you can choose which of the tasks defined above you want to realize entering the number beside the option.
 
 * Task 1: Trim a video (10 seconds if you want)
 
@@ -33,7 +33,3 @@ In the menu you can choose what of the tasks defined above you want to realize e
 * Task 3: Resize video in the formats mentioned.
 	* Enter the format you want via the number beside the option.
 * Task 4: Get a copy of the input video with the audio in AAC format and mono.
- 
-		
-
-		
