@@ -41,4 +41,5 @@ Choose an option:
   2: Get YUV histogram overlayed
   3: Resize the vido
   4: Turn audio into mono in AAC format
+  5: Execute all the options
   0: Exit

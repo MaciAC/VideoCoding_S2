@@ -22,7 +22,7 @@ Run Video_editor.py in the same folder as the video you want to edit, you can ha
 
 Before every edition it will show the .mp4 files in the folder, and will ask which file you want to edit. Enter the option via the number besides the video.
 
-In the menu you can choose which of the tasks defined above you want to realize entering the number beside the option.
+In the menu you can choose which of the tasks defined above you want to realize entering the number beside the option. In addition, entering '5' executes all the options, and '0' closes the program.
 
 * Task 1: Trim a video (10 seconds if you want)
 
